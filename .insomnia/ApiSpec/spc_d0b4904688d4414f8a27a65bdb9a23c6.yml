@@ -1,0 +1,50 @@
+_id: spc_d0b4904688d4414f8a27a65bdb9a23c6
+type: ApiSpec
+parentId: wrk_45bf617a1fff44479aaed27c63653631
+modified: 1643146041713
+created: 1643143788920
+fileName: manhole-metrics-api
+contents: '{"openapi":"3.0.2","info":{"title":"FastAPI","version":"0.1.0"},"paths":{"/accounts/accounts":{"get":{"tags":["Account"],"summary":"Get
+  Accounts","description":"Get the list of accounts associated with a
+  company","operationId":"get_accounts_accounts_accounts_get","responses":{"200":{"description":"Successful
+  Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Accounts"}}}}},"security":[{"OAuth2PasswordBearer":[]}]}},"/accounts/account/{account_id}":{"get":{"tags":["Account"],"summary":"Get
+  Account","description":"Get account
+  information","operationId":"get_account_accounts_account__account_id__get","parameters":[{"required":true,"schema":{"title":"Account
+  Id","type":"string"},"name":"account_id","in":"path"}],"responses":{"200":{"description":"Successful
+  Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Account"}}}},"422":{"description":"Validation
+  Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}},"security":[{"OAuth2PasswordBearer":[]}]},"delete":{"tags":["Account"],"summary":"Delete
+  Account","description":"Delete an
+  account","operationId":"delete_account_accounts_account__account_id__delete","parameters":[{"required":true,"schema":{"title":"Account
+  Id","type":"string"},"name":"account_id","in":"path"}],"responses":{"200":{"description":"Successful
+  Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation
+  Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}},"security":[{"OAuth2PasswordBearer":[]}]}},"/accounts/account":{"put":{"tags":["Account"],"summary":"Put
+  Account","description":"Modify an account, allows changing of account password
+  and account
+  permissions","operationId":"put_account_accounts_account_put","requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Account"}}},"required":true},"responses":{"200":{"description":"Successful
+  Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Account"}}}},"422":{"description":"Validation
+  Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}},"security":[{"OAuth2PasswordBearer":[]}]},"post":{"tags":["Account"],"summary":"Post
+  Account","description":"Create an account, requires an account email and an
+  account
+  password","operationId":"post_account_accounts_account_post","requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Account"}}},"required":true},"responses":{"200":{"description":"Successful
+  Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Account"}}}},"422":{"description":"Validation
+  Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}},"security":[{"OAuth2PasswordBearer":[]}]}},"/token":{"post":{"tags":["Token"],"summary":"Get
+  Token","description":"Returns an auth token for an account
+  login\n    ","operationId":"get_token_token_post","requestBody":{"content":{"application/x-www-form-urlencoded":{"schema":{"$ref":"#/components/schemas/Body_get_token_token_post"}}},"required":true},"responses":{"200":{"description":"Successful
+  Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Token"}}}},"422":{"description":"Validation
+  Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/create_user":{"get":{"tags":["Test"],"summary":"Get
+  Create
+  User","operationId":"get_create_user_create_user_get","responses":{"200":{"description":"Successful
+  Response","content":{"application/json":{"schema":{}}}}}}}},"components":{"schemas":{"Account":{"title":"Account","required":["email","company_id","permission"],"type":"object","properties":{"id":{"title":"Id","type":"string"},"email":{"title":"Email","type":"string"},"company_id":{"title":"Company
+  Id","type":"string"},"password":{"title":"Password","type":"string"},"permission":{"$ref":"#/components/schemas/Permissions"}}},"Accounts":{"title":"Accounts","required":["accounts"],"type":"object","properties":{"accounts":{"title":"Accounts","type":"array","items":{"$ref":"#/components/schemas/Account"}}}},"Body_get_token_token_post":{"title":"Body_get_token_token_post","required":["username","password"],"type":"object","properties":{"grant_type":{"title":"Grant
+  Type","pattern":"password","type":"string"},"username":{"title":"Username","type":"string"},"password":{"title":"Password","type":"string"},"scope":{"title":"Scope","type":"string","default":""},"client_id":{"title":"Client
+  Id","type":"string"},"client_secret":{"title":"Client
+  Secret","type":"string"}}},"HTTPValidationError":{"title":"HTTPValidationError","type":"object","properties":{"detail":{"title":"Detail","type":"array","items":{"$ref":"#/components/schemas/ValidationError"}}}},"Permissions":{"title":"Permissions","required":["view_devices","register_devices","manage_devices","manage_accounts","view_device_data"],"type":"object","properties":{"view_devices":{"title":"View
+  Devices","type":"boolean"},"register_devices":{"title":"Register
+  Devices","type":"boolean"},"manage_devices":{"title":"Manage
+  Devices","type":"boolean"},"manage_accounts":{"title":"Manage
+  Accounts","type":"boolean"},"view_device_data":{"title":"View Device
+  Data","type":"boolean"}}},"Token":{"title":"Token","required":["access_token","token_type"],"type":"object","properties":{"access_token":{"title":"Access
+  Token","type":"string"},"token_type":{"title":"Token
+  Type","type":"string"}}},"ValidationError":{"title":"ValidationError","required":["loc","msg","type"],"type":"object","properties":{"loc":{"title":"Location","type":"array","items":{"type":"string"}},"msg":{"title":"Message","type":"string"},"type":{"title":"Error
+  Type","type":"string"}}}},"securitySchemes":{"OAuth2PasswordBearer":{"type":"oauth2","flows":{"password":{"scopes":{},"tokenUrl":"token"}}}}}}'
+contentType: yaml
