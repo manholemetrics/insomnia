@@ -1,0 +1,39 @@
+_id: req_wrk_45bf617a1fff44479aaed27c636536312855f9c0
+type: Request
+parentId: fld_d9c759e0de444564a4fd07309c5a12b2
+modified: 1643146012866
+created: 1643143788902
+url: "{{ base_url }}/accounts/account"
+name: Put Account
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "id": "string",
+      "email": "string",
+      "company_id": "string",
+      "password": "string",
+      "permission": {
+        "view_devices": true,
+        "register_devices": true,
+        "manage_devices": true,
+        "manage_accounts": true,
+        "view_device_data": true
+      }
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_e4fc9e0bd9fa4c5b943e8da8d31c1fef
+authentication: {}
+metaSortKey: -1643145820002.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

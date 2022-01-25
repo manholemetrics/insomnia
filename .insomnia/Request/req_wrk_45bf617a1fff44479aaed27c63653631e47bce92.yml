@@ -1,0 +1,44 @@
+_id: req_wrk_45bf617a1fff44479aaed27c63653631e47bce92
+type: Request
+parentId: fld_d9c759e0de444564a4fd07309c5a12b2
+modified: 1643146014961
+created: 1643143788901
+url: "{{ base_url }}/accounts/account"
+name: Post Account
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "email": "test3",
+      "company_id": "1",
+      "password": "test",
+      "permission": {
+        "view_devices": true,
+        "register_devices": true,
+        "manage_devices": true,
+        "manage_accounts": true,
+        "view_device_data": true
+      }
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_030ea415c7d340b5b247a7bb213f6068
+authentication:
+  type: oauth2
+  grantType: password
+  clientId: ""
+  username: max
+  password: test
+  accessTokenUrl: "{{ _.base_url }}/token"
+metaSortKey: -1643145820015
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

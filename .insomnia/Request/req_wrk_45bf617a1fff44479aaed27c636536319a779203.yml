@@ -1,0 +1,22 @@
+_id: req_wrk_45bf617a1fff44479aaed27c636536319a779203
+type: Request
+parentId: fld_d9c759e0de444564a4fd07309c5a12b2
+modified: 1643146016793
+created: 1643143788899
+url: "{{ base_url }}/token"
+name: Get Token
+description: ""
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1643145820008.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

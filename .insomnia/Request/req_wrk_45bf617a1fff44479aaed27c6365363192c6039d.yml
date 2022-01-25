@@ -1,0 +1,26 @@
+_id: req_wrk_45bf617a1fff44479aaed27c6365363192c6039d
+type: Request
+parentId: fld_d9c759e0de444564a4fd07309c5a12b2
+modified: 1643146010106
+created: 1643143788904
+url: "{{ base_url }}/accounts/account/3"
+name: Delete Account
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: oauth2
+  grantType: password
+  username: max
+  password: test
+  accessTokenUrl: "{{ _.base_url }}/token"
+metaSortKey: -1643145820027.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

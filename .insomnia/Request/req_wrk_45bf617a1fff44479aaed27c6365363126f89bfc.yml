@@ -1,0 +1,21 @@
+_id: req_wrk_45bf617a1fff44479aaed27c6365363126f89bfc
+type: Request
+parentId: fld_d9c759e0de444564a4fd07309c5a12b2
+modified: 1643146018331
+created: 1643143788896
+url: "{{ base_url }}/create_user"
+name: Get Create User
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1643145820005.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

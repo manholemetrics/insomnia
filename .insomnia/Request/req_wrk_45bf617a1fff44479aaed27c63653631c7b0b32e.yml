@@ -1,0 +1,26 @@
+_id: req_wrk_45bf617a1fff44479aaed27c63653631c7b0b32e
+type: Request
+parentId: fld_d9c759e0de444564a4fd07309c5a12b2
+modified: 1643146145839
+created: 1643143788905
+url: "{{ base_url }}/accounts/account/1"
+name: Get Account
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: oauth2
+  grantType: password
+  username: max
+  password: test
+  accessTokenUrl: "{{ _.base_url }}/token"
+metaSortKey: -1643145819927.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
