@@ -1,9 +1,9 @@
 _id: req_wrk_45bf617a1fff44479aaed27c63653631717a9331
 type: Request
 parentId: fld_d9c759e0de444564a4fd07309c5a12b2
-modified: 1643146006803
+modified: 1643146361826
 created: 1643143788907
-url: "{{ _.base_url }}/accounts/accounts"
+url: "{{ base_url }}/accounts/accounts"
 name: Get Accounts
 description: ""
 method: GET
@@ -14,7 +14,7 @@ authentication:
   type: oauth2
   grantType: password
   credentialsInBody: false
-  username: max
+  username: test
   password: test
   accessTokenUrl: "{{ _.base_url }}/token"
 metaSortKey: -1643145819977.5

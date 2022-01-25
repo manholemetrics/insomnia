@@ -1,9 +1,9 @@
 _id: req_wrk_45bf617a1fff44479aaed27c6365363192c6039d
 type: Request
 parentId: fld_d9c759e0de444564a4fd07309c5a12b2
-modified: 1643146010106
+modified: 1643146370029
 created: 1643143788904
-url: "{{ base_url }}/accounts/account/3"
+url: "{{ base_url }}/accounts/account/{{ account_id }}"
 name: Delete Account
 description: ""
 method: DELETE
@@ -13,7 +13,7 @@ headers: []
 authentication:
   type: oauth2
   grantType: password
-  username: max
+  username: test
   password: test
   accessTokenUrl: "{{ _.base_url }}/token"
 metaSortKey: -1643145820027.5

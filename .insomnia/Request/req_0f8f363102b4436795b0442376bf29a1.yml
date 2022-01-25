@@ -1,0 +1,34 @@
+_id: req_0f8f363102b4436795b0442376bf29a1
+type: Request
+parentId: fld_192d5d95001a4b3ebb55a0aeaa5d03a8
+modified: 1643147978858
+created: 1643147703789
+url: http://127.0.0.1:8001/devices
+name: devices
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: |-
+    {
+
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_e8369bb8cc754d02a27cccd1af1d7341
+authentication:
+  type: oauth2
+  grantType: password
+  username: test
+  password: test
+  accessTokenUrl: "{{ _.base_url }}/token"
+metaSortKey: -1643147703789
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

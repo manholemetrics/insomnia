@@ -1,7 +1,7 @@
 _id: spc_d0b4904688d4414f8a27a65bdb9a23c6
 type: ApiSpec
 parentId: wrk_45bf617a1fff44479aaed27c63653631
-modified: 1643146041713
+modified: 1643147041901
 created: 1643143788920
 fileName: manhole-metrics-api
 contents: '{"openapi":"3.0.2","info":{"title":"FastAPI","version":"0.1.0"},"paths":{"/accounts/accounts":{"get":{"tags":["Account"],"summary":"Get

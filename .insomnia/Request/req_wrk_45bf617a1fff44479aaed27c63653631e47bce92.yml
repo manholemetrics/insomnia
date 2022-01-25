@@ -1,7 +1,7 @@
 _id: req_wrk_45bf617a1fff44479aaed27c63653631e47bce92
 type: Request
 parentId: fld_d9c759e0de444564a4fd07309c5a12b2
-modified: 1643146014961
+modified: 1643147786650
 created: 1643143788901
 url: "{{ base_url }}/accounts/account"
 name: Post Account
@@ -11,7 +11,7 @@ body:
   mimeType: application/json
   text: |-
     {
-      "email": "test3",
+      "email": "test2",
       "company_id": "1",
       "password": "test",
       "permission": {
@@ -31,7 +31,7 @@ authentication:
   type: oauth2
   grantType: password
   clientId: ""
-  username: max
+  username: test
   password: test
   accessTokenUrl: "{{ _.base_url }}/token"
 metaSortKey: -1643145820015
