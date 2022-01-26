@@ -1,9 +1,9 @@
 _id: req_wrk_45bf617a1fff44479aaed27c636536319a779203
 type: Request
 parentId: fld_d9c759e0de444564a4fd07309c5a12b2
-modified: 1643146016793
+modified: 1643195086302
 created: 1643143788899
-url: "{{ base_url }}/token"
+url: "{{ _['company-account-service'] }}/token"
 name: Get Token
 description: ""
 method: POST

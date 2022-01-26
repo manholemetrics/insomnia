@@ -1,0 +1,16 @@
+_id: env_1317d0ad9d524c888a990fe3ce5187af
+type: Environment
+parentId: env_536233ef4263f72600060b5d63d68659e57a3a84
+modified: 1643195050779
+created: 1643194988903
+name: manhole-metrics
+data:
+  company-account-service: http://127.0.0.1:8000
+  company-device-service: http://127.0.0.1:8001
+dataPropertyOrder:
+  "&":
+    - company-account-service
+    - company-device-service
+color: null
+isPrivate: false
+metaSortKey: 1643194988903

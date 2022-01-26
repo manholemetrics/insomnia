@@ -1,9 +1,9 @@
 _id: req_0f8f363102b4436795b0442376bf29a1
 type: Request
 parentId: fld_192d5d95001a4b3ebb55a0aeaa5d03a8
-modified: 1643147978858
+modified: 1643196985798
 created: 1643147703789
-url: http://127.0.0.1:8001/devices
+url: "{{ _['company-device-service'] }}/devices"
 name: devices
 description: ""
 method: GET
@@ -11,7 +11,9 @@ body:
   mimeType: application/json
   text: |-
     {
-
+    	"latitude":10,
+    	"longitude":10,
+    	"distance":5
     }
 parameters: []
 headers:
@@ -23,7 +25,7 @@ authentication:
   grantType: password
   username: test
   password: test
-  accessTokenUrl: "{{ _.base_url }}/token"
+  accessTokenUrl: "{{ _['company-account-service'] }}/token"
 metaSortKey: -1643147703789
 isPrivate: false
 settingStoreCookies: true
